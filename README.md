@@ -36,14 +36,6 @@ OPML backs up subscriptions only; use the database file to preserve reading hist
 
 The server binds to `127.0.0.1`, accessible on this computer. It makes network requests to the feeds you subscribe to. It is a personal local application, not a server intended for public hosting. GitHub Pages cannot run its Python backend.
 
-## Share on GitHub
-
-Create a repository and upload these source files. Exclude `reader.db`, database sidecars, private OPML files, and virtual environments. The included `.gitignore` excludes runtime database files.
-
-The package has no license file yet. Choose a license before presenting it as open-source; publishing the source alone does not grant permission to reuse or redistribute it.
-
-Suggested repository description: “A local RSS/Atom reader with a neon interface. Python standard library only. No accounts or tracking.”
-
 ## Development
 
 - `app.py`: standard-library HTTP server, feed parser, SQLite storage.
